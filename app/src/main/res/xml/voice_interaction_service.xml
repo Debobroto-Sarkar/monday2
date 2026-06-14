@@ -9,5 +9,4 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:sessionService=".services.MondayVoiceInteractionService"
     android:supportsAssist="true"
-    android:supportsLaunchVoiceAssistFromKeyguard="true"
-    android:supportsLocalVoiceInteraction="false" />
+    android:supportsLaunchVoiceAssistFromKeyguard="true" />

@@ -143,7 +143,7 @@
             android:layout_height="44dp"
             android:layout_weight="1"
             android:hint="Type a command…"
-            android:hintTextColor="@color/monday_text_hint"
+            android:textColorHint="@color/monday_text_hint"
             android:textColor="@color/monday_text_primary"
             android:textSize="14sp"
             android:background="@drawable/bg_input_field"
