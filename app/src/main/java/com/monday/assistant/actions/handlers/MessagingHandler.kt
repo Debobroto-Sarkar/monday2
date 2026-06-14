@@ -7,6 +7,7 @@ import android.util.Log
 import com.google.gson.JsonObject
 import com.monday.assistant.actions.ActionResult
 import com.monday.assistant.core.ContactResolver
+import com.monday.assistant.core.ResolvedContact
 
 /**
  * MESSAGING HANDLER
