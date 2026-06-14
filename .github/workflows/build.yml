@@ -30,7 +30,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build Debug APK
-        run: ./gradlew assembleDebug --stacktrace --no-daemon
+        run: ./gradlew assembleDebug --info --no-daemon 2>&1
         env:
           GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx2048m"
 
