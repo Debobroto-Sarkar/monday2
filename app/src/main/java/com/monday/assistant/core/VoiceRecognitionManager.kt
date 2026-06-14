@@ -67,7 +67,6 @@ class VoiceRecognitionManager(
             putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
             putExtra(RecognizerIntent.EXTRA_LANGUAGE, language)
             putExtra(RecognizerIntent.EXTRA_LANGUAGE_PREFERENCE, language)
-            putExtra(RecognizerIntent.EXTRA_ONLY_RETURN_LANGUAGE_INDEPENDENT_RESULTS, false)
 
             // Also recognize English words mixed in
             putExtra(RecognizerIntent.EXTRA_LANGUAGE, "$language,en-US")

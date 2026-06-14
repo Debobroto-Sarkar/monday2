@@ -6,7 +6,7 @@ import android.service.notification.NotificationListenerService
 import android.service.notification.StatusBarNotification
 import android.util.Log
 import androidx.core.app.NotificationCompat
-import androidx.core.app.RemoteInput
+import android.app.RemoteInput
 
 /**
  * ═══════════════════════════════════════════════════════════════════════

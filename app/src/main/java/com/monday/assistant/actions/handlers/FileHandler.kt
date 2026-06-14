@@ -48,12 +48,12 @@ class FileHandler(private val context: Context) {
             val intent = if (uris.size == 1) {
                 Intent(Intent.ACTION_SEND).apply {
                     putExtra(Intent.EXTRA_STREAM, uris[0])
-                    type = getMimeType(uris[0])
+                    setType(getMimeType(uris[0]))
                 }
             } else {
                 Intent(Intent.ACTION_SEND_MULTIPLE).apply {
                     putParcelableArrayListExtra(Intent.EXTRA_STREAM, ArrayList(uris))
-                    type = "*/*"
+                    setType("*/*")
                 }
             }
 
@@ -88,7 +88,7 @@ class FileHandler(private val context: Context) {
 
         val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
             addCategory(Intent.CATEGORY_OPENABLE)
-            type = "*/*"
+            setType("*/*")
             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         }
 
